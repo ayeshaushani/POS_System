@@ -1,6 +1,6 @@
 # POS_System
 
-mokup_diagram
+# mokup_diagram
 https://www.figma.com/design/wcLK9ToKxqKSnOcKHDhxXP/POS_System?node-id=0-1&t=A69bofoBT38iEmkG-1
 
 # site_map
