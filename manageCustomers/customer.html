@@ -50,6 +50,67 @@
     .navbar-toggler-icon {
         color: white;
     }
+    .main>.grid>.mb-3>input {
+        width: 500px;
+        background: linear-gradient(white,gray);
+
+
+    }
+    .main>.grid>.mb-3>label {
+        font-weight: bold;
+
+    }
+
+    .grid{
+        background: darkgrey; /* Black background with 70% transparency */
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        display: block;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 10px;
+        width: 80%;
+        height: 70vh;
+        margin: auto;
+        position: absolute;
+        top: 150px;
+        bottom: 10px;
+        left: 200px;
+
+    }
+    .table {
+        position: absolute;
+        right: 20px;
+        top: 150px;
+        width: 50%;
+        height: 400px;
+
+    }
+    #customer_search{
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        display: inline-block;
+    }
+    #customer_search>i{
+        position: relative;
+        right: -15px;
+        bottom: 10px;
+    }
+    .form-select , #customer_search{
+        gap: 1.5rem;
+
+    }
+   #customer_btn {
+        position: absolute;
+        top: 400px; /* Adjust as needed */
+        left: -1020px; /* Adjust as needed */
+        display: flex;
+        gap: 10px;
+
+    }
+
 </style>
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -78,7 +139,86 @@
     </div>
 </nav>
 <section class="main">
+<div class="grid">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Id</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="id">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <label for="exampleFormControlInput2"></label>
+        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="address">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Contact number</label>
+        <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="contact num">
+    </div>
+    <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+        <div id="customer_search" class="search mb-4 mt-4 d-flex flex-row align-items-end">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" class="form-control" placeholder="Search">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>customer_id</option>
+                <option>name</option>
+                <option>address</option>
+                <option>salary</option>
+            </select>
+            <div id="customer_btn" class="mt-5">
+                <button type="button" class="btn btn-success">Save</button>
+                <button type="button" class="btn btn-primary">Update</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+                <button type="reset" class="btn btn-warning">Clear</button>
+            </div>
+        </div>
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr class="table-info">
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Contact</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Anton</td>
+                <td>3A/1,Landon</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>John</td>
+                <td>45,Galle Road</td>
+                <td> Hikkaduwa</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td> Mark</td>
+                <td>35/B,Colombo3</td>
+                <td>Colombo Main</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Paul</td>
+                <td>45,Nuwara Road</td>
+                <td> Kaduganawa</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Marline</td>
+                <td>35/B,Colombo3</td>
+                <td>Colombo Main</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
+</div>
 
 </section>
 
