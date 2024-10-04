@@ -84,14 +84,18 @@
    }
 
    .grid-container {
+       background: rgba(0, 0, 0, 0.7); /* Black background with 70% transparency */
+       border-radius: 15px;
+       padding: 30px;
+       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
        display: grid;
        justify-content: center;
        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
        gap: 10px;
-       width: 100%;
-       padding: 0 20px;
+       width: 80%;
+       margin: auto;
+       align-items: center;
    }
-
    .grid-container > div {
        border-radius: 15px;
        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
